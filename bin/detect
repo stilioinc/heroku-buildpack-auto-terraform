@@ -2,7 +2,7 @@
 
 cd "$1"
 
-if [ -e *.tf ]; then
+if [ $(find . -maxdepth 1 -name "*.tf" | wc -l) -gt 0 ]; then
   echo "Terraform"
   exit 0
 fi
