@@ -3,7 +3,3 @@
 set -eu
 
 echo "---"
-
-# init to bring in new relative providers/modules if necessary
-
-terraform init -input=false
