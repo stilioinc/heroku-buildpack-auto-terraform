@@ -3,4 +3,5 @@
 export TF_IN_AUTOMATION=true
 
 exec terraform init -input=false
-exec terraform apply -input=false -auto-approve
+exec terraform plan -input=false -out=terraform.plan
+exec terraform apply terraform.plan -input=false -auto-approve
