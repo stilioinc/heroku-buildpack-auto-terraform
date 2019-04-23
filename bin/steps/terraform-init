@@ -2,4 +2,4 @@
 
 cd "$1"
 
-TF_IN_AUTOMATION=true terraform init
+TF_IN_AUTOMATION=true terraform init -input=false
