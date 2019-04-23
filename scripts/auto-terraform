@@ -4,6 +4,14 @@ set -eu
 
 export TF_IN_AUTOMATION=true
 
+echo "initing"
+
 exec terraform init -input=false
+
+echo "planning"
+
 exec terraform plan -input=false -out=terraform.plan
+
+echo "applying"
+
 exec terraform apply terraform.plan -input=false -auto-approve
