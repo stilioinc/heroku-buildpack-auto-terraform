@@ -14,4 +14,4 @@ terraform plan -input=false -out=terraform.plan
 
 echo "applying"
 
-terraform apply terraform.plan -input=false -auto-approve
+terraform apply -input=false -auto-approve terraform.plan
