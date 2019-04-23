@@ -1,5 +1,7 @@
 #!/bin/bash -e
 
+set -eu
+
 export TF_IN_AUTOMATION=true
 
 exec terraform init -input=false
