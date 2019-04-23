@@ -6,12 +6,12 @@ export TF_IN_AUTOMATION=true
 
 echo "initing"
 
-exec terraform init -input=false
+terraform init -input=false
 
 echo "planning"
 
-exec terraform plan -input=false -out=terraform.plan
+terraform plan -input=false -out=terraform.plan
 
 echo "applying"
 
-exec terraform apply terraform.plan -input=false -auto-approve
+terraform apply terraform.plan -input=false -auto-approve
